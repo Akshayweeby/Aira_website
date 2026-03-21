@@ -44,12 +44,13 @@ The website was built from the ground up using core web technologies to ensure f
 
 ## 👥 Creators
 
-* **Akshay Vishwanath Basavanalmath**
-  * 📧 Email: [Aksh.techie@gmail.com](mailto:Aksh.techie@gmail.com)
-* **Achyut Mallikarjun Sulikeri**
-  * 📧 Email: [achyutm791@gmail.com](mailto:achyutm791@gmail.com)
+| 🧑‍💻 Creator Name | 📧 Contact Email |
+| :--- | :--- |
+| **Akshay Vishwanath Basavanalmath** | [Aksh.techie@gmail.com](mailto:Aksh.techie@gmail.com) |
+| **Achyut Mallikarjun Sulikeri** | [achyutm791@gmail.com](mailto:achyutm791@gmail.com) |
+
+<br/>
 
 <div align="center">
-  <br/>
   <sub>Built with ❤️ for student success and parent peace of mind.</sub>
 </div>
