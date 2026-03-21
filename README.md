@@ -42,6 +42,8 @@ The website was built from the ground up using core web technologies to ensure f
 * `style.css` - The master stylesheet governing the design system of the entire website.
 * `script.js` - Client-side interactivity and Document Object Model (DOM) manipulation logic.
 
+<div align="center">
+
 ## 👥 Creators
 
 | 🧑‍💻 Creator Name | 📧 Contact Email |
@@ -51,6 +53,6 @@ The website was built from the ground up using core web technologies to ensure f
 
 <br/>
 
-<div align="center">
-  <sub>Built with ❤️ for student success and parent peace of mind.</sub>
+<sub>Built with ❤️ for student success and parent peace of mind.</sub>
+
 </div>
