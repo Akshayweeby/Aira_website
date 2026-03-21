@@ -43,12 +43,12 @@ The website was built from the ground up using core web technologies to ensure f
 * `script.js` - Client-side interactivity and Document Object Model (DOM) manipulation logic.
 
 ## 👥 Creators
-<div align="center">
+
 | 🧑‍💻 Creator Name | 📧 Contact Email |
 | :--- | :--- |
 | **Akshay Vishwanath Basavanalmath** | [Aksh.techie@gmail.com](mailto:Aksh.techie@gmail.com) |
 | **Achyut Mallikarjun Sulikeri** | [achyutm791@gmail.com](mailto:achyutm791@gmail.com) |
-</div>
+
 <br/>
 
 <div align="center">
