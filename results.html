@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results & Reviews | AIRA Study Centre</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .case-study {
+            background: #fff;
+            border-radius: var(--radius-lg);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border);
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .case-stats {
+            background: var(--light-gray);
+            padding: 1.5rem;
+            border-radius: var(--radius-md);
+            text-align: center;
+            min-width: 200px;
+        }
+
+        .stat-arrow {
+            color: var(--primary);
+            font-size: 2rem;
+            margin: 0.5rem 0;
+            font-weight: 800;
+        }
+
+        .stat-num {
+            font-size: 2.5rem;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            line-height: 1;
+        }
+
+        @media (max-width: 768px) {
+            .case-study {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Menu -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-inner">
+            <a href="Aira_website.html" class="logo">
+                <img src="Aira%20logo.png" alt="AIRA Logo" style="height: 55px; width: 55px; border-radius: 50%;">
+                <span style="font-family: 'Libre Baskerville', serif; font-weight: 700;">AIRA Study Centre</span>
+            </a>
+
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+                ☰
+            </button>
+
+            <div class="nav-links" id="navLinks">
+                <a href="Aira_website.html">Home</a>
+                <a href="programs.html">Programs</a>
+                <a href="about.html">About</a>
+                <a href="results.html" class="active">Results</a>
+                <a href="contact.html">Contact</a>
+
+
+                <div class="nav-actions">
+                    <a href="contact.html" class="btn btn-primary" style="color: rgb(247, 221, 92);">Book Free Demo
+                        Class</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <span class="section-tag">Proven Track Record</span>
+            <h1 class="page-title">Student Success Stories</h1>
+            <p class="page-subtitle">Real results from real students. See how our approach transforms academic
+                performance.</p>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+
+            <h2 class="mb-4 text-center">Improvement Case Studies</h2>
+
+            <!-- Case Study 1 -->
+            <div class="case-study">
+                <div class="case-stats">
+                    <p>Maths Score</p>
+                    <div class="stat-num text-muted" style="text-decoration: line-through;">55%</div>
+                    <div class="stat-arrow">↓ to ↑</div>
+                    <div class="stat-num text-primary">82%</div>
+                    <p style="font-size: 0.85rem; margin-top: 0.5rem;">Within One Year</p>
+                </div>
+                <div>
+                    <h3 style="margin-bottom: 1rem; color: var(--primary);">Grade 9 Student Overcomes Math Anxiety</h3>
+                    <p class="text-muted" style="margin-bottom: 1rem;">
+                        This student joined AIRA severely lacking confidence in Algebra and Geometry. They felt lost in
+                        their school's large batch of 50 students. By moving them into our small batch of 12, the
+                        educator worked closely to identify their foundational gaps from Grade 7.
+                    </p>
+                    <p class="text-muted">
+                        Through guided practice and our doubt-solving sessions, the student regained their confidence,
+                        scoring an incredible 82% in their final exams.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Case Study 2 -->
+            <div class="case-study">
+                <div class="case-stats">
+                    <p>Science Score</p>
+                    <div class="stat-num text-muted" style="text-decoration: line-through;">68%</div>
+                    <div class="stat-arrow">↓ to ↑</div>
+                    <div class="stat-num text-primary">94%</div>
+                    <p style="font-size: 0.85rem; margin-top: 0.5rem;">Grade 10 Boards</p>
+                </div>
+                <div>
+                    <h3 style="margin-bottom: 1rem; color: var(--primary);">Perfecting Board Exam Preparation</h3>
+                    <p class="text-muted" style="margin-bottom: 1rem;">
+                        A Grade 10 student had average scores in Physics and Chemistry and struggled with time
+                        management during exams. Using the AIRA 5-step teaching method, we focused heavily on regular
+                        testing and performance tracking.
+                    </p>
+                    <p class="text-muted">
+                        After rigorous mock exams and answering strategy adjustments, they scored a phenomenal 94% in
+                        their Science Board Examination.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section section-bg">
+        <div class="container">
+            <div class="section-header">
+                <h2>Parent & Student Reviews</h2>
+            </div>
+
+            <div class="testi-grid">
+                <div class="testi-card">
+                    <div class="testi-quote">"</div>
+                    <div class="stars">★★★★★</div>
+                    <p class="testi-content">"AIRA helped my child improve from 62% to 89% in Maths. The small batch
+                        size really made a difference in building his confidence. He actually looks forward to taking
+                        math tests now!"</p>
+                    <div class="testi-author">
+                        <div class="author-img">R</div>
+                        <div class="author-info">
+                            <h4>Ramesh K.</h4>
+                            <span>Parent of Grade 9 Student</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testi-card">
+                    <div class="testi-quote">"</div>
+                    <div class="stars">★★★★★</div>
+                    <p class="testi-content">"I finally understood algebra concepts clearly. The teachers are very
+                        approachable and I never hesitate to ask my doubts anymore. The worksheets are incredibly
+                        helpful."</p>
+                    <div class="testi-author">
+                        <div class="author-img">A</div>
+                        <div class="author-info">
+                            <h4>Anjali M.</h4>
+                            <span>Student (Grade 10)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testi-card">
+                    <div class="testi-quote">"</div>
+                    <div class="stars">★★★★★</div>
+                    <p class="testi-content">"Best coaching institute for Science. Instead of making us memorize
+                        formulas, the teachers explain concepts using logic and practical examples. My physics scores
+                        shot up immediately."</p>
+                    <div class="testi-author">
+                        <div class="author-img">V</div>
+                        <div class="author-info">
+                            <h4>Vikram S.</h4>
+                            <span>Student (Grade 9)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testi-card">
+                    <div class="testi-quote">"</div>
+                    <div class="stars">★★★★★</div>
+                    <p class="testi-content">"I was worried about my daughter's 10th board prep because of her poor
+                        performance in 9th. AIRA's Board Mastery program brought structure to her studies. Very grateful
+                        to the teachers here."</p>
+                    <div class="testi-author">
+                        <div class="author-img">S</div>
+                        <div class="author-info">
+                            <h4>Sunita P.</h4>
+                            <span>Parent</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" style="margin-top: 0;">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <img src="Aira%20logo.png" alt="AIRA Logo"
+                            style="height: 45px; width: 45px; border-radius: 50%;">
+                        <span style="font-family: 'Libre Baskerville', serif; font-weight: 700;">AIRA Study
+                            Centre</span>
+                    </div>
+                    <p>Maths & Science Coaching · Grades 7–10</p>
+                    <div class="footer-socials">
+                        <a href="https://www.facebook.com/airastudy.neetusharma/" target="_blank" title="Facebook">
+                            <img src="FB.png" alt="Facebook">
+                        </a>
+                        <a href="https://www.instagram.com/airastudycentre/" target="_blank" title="Instagram">
+                            <img src="IG.jpg" alt="Instagram">
+                        </a>
+                        <a href="https://www.youtube.com/@airastudycentre" target="_blank" title="YouTube">
+                            <img src="YT.png" alt="YouTube">
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="Aira_website.html">Home</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="results.html">Results & Testimonials</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Programs</h4>
+                    <ul class="footer-links">
+                        <li><a href="programs.html">Grade 7 Foundation</a></li>
+                        <li><a href="programs.html">Grade 8 Concept Builder</a></li>
+                        <li><a href="programs.html">Grade 9 Advanced</a></li>
+                        <li><a href="programs.html">Grade 10 Mastery</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Contact Us</h4>
+                    <ul class="footer-links">
+                        <li><a href="tel:+919513135352">📞 +91 95131 35352</a></li>
+                        <li><a href="https://wa.me/919513135352?text=Hello,%20I%20want%20to%20know%20about%20AIRA%20Study%20Centre%20classes."
+                                target="_blank">💬 WhatsApp Us</a></li>
+                        <li>📍Shop No.2, 2nd Cross, near DLF main road, opposite
+                            Spectra Diagnostic center, Yelenahalli, Akshayanagar, Bengaluru-560114, Karnataka.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AIRA Study Centre. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/919999999999?text=Hello,%20I%20want%20to%20know%20about%20AIRA%20Study%20Centre%20classes."
+        class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
+        <svg viewBox="0 0 32 32" fill="none" style="width: 32px; height: 32px;">
+            <path
+                d="M23.5 8.5C21.7 6.7 19.3 5.7 16.7 5.7C11.4 5.7 7.1 10 7.1 15.3C7.1 17.1 7.6 18.8 8.5 20.3L7 25L11.9 23.5C13.3 24.3 14.9 24.7 16.7 24.7C21.9 24.7 26.3 20.4 26.3 15.2C26.2 12.6 25.2 10.2 23.5 8.5ZM16.7 23.1C15.1 23.1 13.5 22.7 12.2 21.9L11.9 21.7L9.1 22.5L9.9 19.8L9.7 19.4C8.8 18 8.3 16.3 8.3 14.7C8.3 10.5 11.7 7.1 15.9 7.1C17.9 7.1 19.8 7.9 21.2 9.3C22.6 10.7 23.4 12.6 23.4 14.6C23.8 18.7 20.5 23.1 16.7 23.1ZM20.5 17.2C20.3 17.1 19.2 16.5 19 16.5C18.8 16.4 18.7 16.4 18.5 16.6C18.4 16.8 17.9 17.3 17.8 17.5C17.7 17.6 17.5 17.7 17.3 17.5C17.1 17.4 16.5 17.2 15.8 16.5C15.2 15.9 14.8 15.2 14.6 15C14.5 14.8 14.6 14.6 14.7 14.5L15 14.1C15.1 14 15.1 13.8 15.2 13.7C15.3 13.6 15.3 13.4 15.2 13.3C15.1 13.2 14.7 12.1 14.5 11.7C14.3 11.3 14.1 11.3 14 11.3H13.5C13.4 11.3 13.1 11.4 12.9 11.6C12.7 11.8 12.1 12.4 12.1 13.5C12.1 14.6 12.9 15.7 13 15.8C13.1 15.9 14.7 18.3 17 19.2C17.6 19.5 18 19.7 18.4 19.8C19 20 19.5 20 20 19.9C20.5 19.8 21.5 19.2 21.7 18.6C21.9 18 21.9 17.5 21.8 17.4C21.7 17.3 21.5 17.3 20.5 17.2Z"
+                fill="white" />
+        </svg>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
