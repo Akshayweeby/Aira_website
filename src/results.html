@@ -6,48 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Results & Reviews | AIRA Study Centre</title>
     <link rel="stylesheet" href="style.css">
-    <style>
-        .case-study {
-            background: #fff;
-            border-radius: var(--radius-lg);
-            padding: 2rem;
-            margin-bottom: 2rem;
-            box-shadow: var(--shadow-sm);
-            border: 1px solid var(--border);
-            display: flex;
-            align-items: center;
-            gap: 2rem;
-        }
-
-        .case-stats {
-            background: var(--light-gray);
-            padding: 1.5rem;
-            border-radius: var(--radius-md);
-            text-align: center;
-            min-width: 200px;
-        }
-
-        .stat-arrow {
-            color: var(--primary);
-            font-size: 2rem;
-            margin: 0.5rem 0;
-            font-weight: 800;
-        }
-
-        .stat-num {
-            font-size: 2.5rem;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 700;
-            line-height: 1;
-        }
-
-        @media (max-width: 768px) {
-            .case-study {
-                flex-direction: column;
-                text-align: center;
-            }
-        }
-    </style>
 </head>
 
 <body>
@@ -73,9 +31,8 @@
                 <a href="results.html" class="active">Results</a>
                 <a href="contact.html">Contact</a>
 
-
                 <div class="nav-actions">
-                    <a href="contact.html" class="btn btn-primary" style="color: rgb(247, 221, 92);">Book Free Demo
+                    <a href="contact.html" style="color: rgb(234, 210, 72);" class="btn btn-primary">Book Free Demo
                         Class</a>
                 </div>
             </div>
@@ -286,7 +243,16 @@
         </svg>
     </a>
 
+    <!-- CDN Dependencies -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.0.42/dist/lenis.min.js"></script>
+
+    <!-- App Scripts -->
     <script src="script.js"></script>
+    <script src="smooth-scroll.js"></script>
+    <script src="cursor.js"></script>
+    <script src="animations.js"></script>
 </body>
 
 </html>

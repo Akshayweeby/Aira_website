@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-9">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AIRA Study Centre | Maths & Science Coaching for Grades 7-10</title>
     <meta name="description"
@@ -33,9 +33,8 @@
                 <a href="results.html">Results</a>
                 <a href="contact.html">Contact</a>
 
-
                 <div class="nav-actions">
-                    <a href="contact.html" class="btn btn-primary" style="color: rgb(247, 221, 92);">Book Free Demo
+                    <a href="contact.html" class="btn btn-primary" style='color: rgb(234, 210, 72);'>Book Free Demo
                         Class</a>
                 </div>
             </div>
@@ -44,6 +43,7 @@
 
     <!-- Hero Section -->
     <section class="hero" id="home">
+        <canvas id="hero-canvas"></canvas>
         <div class="hero-shape hero-shape-1"></div>
         <div class="hero-shape hero-shape-2"></div>
         <div class="container hero-grid">
@@ -74,7 +74,6 @@
                     </div>
                 </div>
                 <div class="hero-img-wrap">
-                    <!-- Placeholder for Student/Teacher Image -->
                     <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&q=80&w=800"
                         alt="Teacher explaining concepts to students"
                         style="object-fit: cover; width: 100%; height: 100%;">
@@ -89,32 +88,27 @@
             <div class="section-header">
                 <h2>Why Many Students Struggle in Big Institutes</h2>
             </div>
-            <div class="problem-grid mb-4">
-
-                <center>
-                    <div class="problem-card">
-                        <div class="problem-icon">👥</div>
-                        <h3>Large Batches</h3>
-                        <p>Too many students in one class limits personal attention from the teacher.</p>
-                    </div>
-                    <div class="problem-card">
-                        <div class="problem-icon">🤐</div>
-                        <h3>Limited Attention</h3>
-                        <p>Teachers can't focus on individual student needs and pace of learning.</p>
-                    </div>
-                </center>
-                <center>
-                    <div class="problem-card">
-                        <div class="problem-icon">❓</div>
-                        <h3>Hesitation to Ask</h3>
-                        <p>Students shy away from asking doubts in front of a crowded classroom.</p>
-                    </div>
-                    <div class="problem-card">
-                        <div class="problem-icon">🌫️</div>
-                        <h3>Unclear Concepts</h3>
-                        <p>Without proper foundation, topics feel confusing and exams become stressful.</p>
-                    </div>
-                </center>
+            <div class="problem-grid problem-grid-flex mb-4">
+                <div class="problem-card">
+                    <div class="problem-icon">👥</div>
+                    <h3>Large Batches</h3>
+                    <p>Too many students in one class limits personal attention from the teacher.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">🤐</div>
+                    <h3>Limited Attention</h3>
+                    <p>Teachers can't focus on individual student needs and pace of learning.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">❓</div>
+                    <h3>Hesitation to Ask</h3>
+                    <p>Students shy away from asking doubts in front of a crowded classroom.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">🌫️</div>
+                    <h3>Unclear Concepts</h3>
+                    <p>Without proper foundation, topics feel confusing and exams become stressful.</p>
+                </div>
             </div>
 
             <div class="problem-transition">
@@ -313,10 +307,11 @@
             <p style="font-size: 1.25rem; margin-bottom: 2rem; opacity: 0.9;">Free Demo Class Available for all Grades
                 7-10</p>
             <div class="cta-btns">
-                <a href="contact.html" class="btn btn-yellow btn-lg" style="color: var(--primary-dark)">Book Demo
+                <a href="contact.html" class="btn btn-yellow btn-lg">Book Demo
                     Class</a>
                 <a href="https://wa.me/919999999999?text=Hello,%20I%20want%20to%20know%20about%20AIRA%20Study%20Centre%20classes."
-                    target="_blank" class="btn btn-outline btn-lg" style="border-color: #fff; color: #fff;">WhatsApp
+                    target="_blank" style="background-color: rgb(255, 255, 255);" class="btn btn-outline btn-lg"
+                    style="color: black;">WhatsApp
                     Now</a>
             </div>
         </div>
@@ -387,7 +382,18 @@
         </svg>
     </a>
 
+    <!-- CDN Dependencies -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r160/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.0.42/dist/lenis.min.js"></script>
+
+    <!-- App Scripts -->
     <script src="script.js"></script>
+    <script src="smooth-scroll.js"></script>
+    <script src="cursor.js"></script>
+    <script src="three-scene.js"></script>
+    <script src="animations.js"></script>
 </body>
 
 </html>
