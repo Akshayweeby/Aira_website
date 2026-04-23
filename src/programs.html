@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Programs | AIRA Study Centre</title>
+    <!-- [Module 3.5] HTTPS Redirect -->
+    <script>if(location.protocol==='http:'&&location.hostname!=='localhost'){location.replace('https://'+location.host+location.pathname+location.search)}</script>
+    <!-- [Module 3.1] Fallback CSP for local dev -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com https://unpkg.com https://www.googletagmanager.com https://static.hotjar.com https://www.google.com https://www.gstatic.com 'unsafe-inline'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://images.unsplash.com https://www.google.com; connect-src 'self' https://script.google.com https://www.google-analytics.com https://*.supabase.co; frame-src https://www.google.com;">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -243,6 +247,25 @@
     <script src="smooth-scroll.js"></script>
     <script src="cursor.js"></script>
     <script src="animations.js"></script>
+
+    <!-- [Module 1.2] Core Web Vitals -->
+    <script src="https://unpkg.com/web-vitals@3/dist/web-vitals.iife.js"></script>
+    <script src="web-vitals-report.js"></script>
+
+    <!-- [Module 1.1+1.4] Analytics & Consent -->
+    <script src="analytics.js"></script>
+    <script src="consent-banner.js"></script>
+
+    <!-- [Module 3.2] reCAPTCHA v3 -->
+    <script src="https://www.google.com/recaptcha/api.js?render=YOUR_RECAPTCHA_SITE_KEY"></script>
+
+    <!-- [Module 3.3] Input Sanitization -->
+    <script src="sanitize.js"></script>
+
+    <!-- [Module 2+4] Form Handler & Offline Queue -->
+    <script src="https://unpkg.com/idb-keyval@6/dist/umd.js"></script>
+    <script src="offline-queue.js"></script>
+    <script src="form-handler.js"></script>
 </body>
 
 </html>

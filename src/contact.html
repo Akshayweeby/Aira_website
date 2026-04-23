@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact & Book Demo | AIRA Study Centre</title>
+    <!-- [Module 3.5] HTTPS Redirect -->
+    <script>if(location.protocol==='http:'&&location.hostname!=='localhost'){location.replace('https://'+location.host+location.pathname+location.search)}</script>
+    <!-- [Module 3.1] Fallback CSP for local dev -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com https://unpkg.com https://www.googletagmanager.com https://static.hotjar.com https://www.google.com https://www.gstatic.com 'unsafe-inline'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://images.unsplash.com https://www.google.com; connect-src 'self' https://script.google.com https://www.google-analytics.com https://*.supabase.co; frame-src https://www.google.com;">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -114,12 +118,12 @@
                         <h3 class="mb-3" style="color: var(--primary);">Book a Free Demo Class</h3>
                         <form id="demoForm">
                             <div class="form-group">
-                                <label>Student Name</label>
-                                <input type="text" class="form-control" placeholder="Enter student's name" required>
+                                <label for="demo-student-name">Student Name</label>
+                                <input type="text" id="demo-student-name" name="student_name" class="form-control" placeholder="Enter student's name" required>
                             </div>
                             <div class="form-group">
-                                <label>Grade</label>
-                                <select class="form-control" required>
+                                <label for="demo-grade">Grade</label>
+                                <select id="demo-grade" name="grade" class="form-control" required>
                                     <option value="" disabled selected>Select Grade</option>
                                     <option value="7">Grade 7</option>
                                     <option value="8">Grade 8</option>
@@ -128,8 +132,8 @@
                                 </select>
                             </div>
                             <div class="form-group">
-                                <label>Subject Difficulty</label>
-                                <select class="form-control" required>
+                                <label for="demo-subject">Subject Difficulty</label>
+                                <select id="demo-subject" name="subject" class="form-control" required>
                                     <option value="" disabled selected>Where do they struggle?</option>
                                     <option value="Maths">Mathematics</option>
                                     <option value="Science">Science (Physics/Chem/Bio)</option>
@@ -137,8 +141,8 @@
                                 </select>
                             </div>
                             <div class="form-group">
-                                <label>Phone Number</label>
-                                <input type="tel" class="form-control" placeholder="Mobile / WhatsApp number" required>
+                                <label for="demo-phone">Phone Number</label>
+                                <input type="tel" id="demo-phone" name="phone" class="form-control" placeholder="Mobile / WhatsApp number" required>
                             </div>
                             <button type="submit" class="btn btn-primary btn-full mt-2">Submit Enquiry</button>
                         </form>
@@ -157,13 +161,13 @@
                             Book a free academic diagnostic assessment to identify foundational gaps.</p>
                         <form id="diagnosticForm">
                             <div class="form-group">
-                                <input type="text" class="form-control"
+                                <input type="text" id="diag-student-name" name="student_name" class="form-control"
                                     style="border: none; background: rgba(255,255,255,0.9);" placeholder="Student Name"
                                     required>
                             </div>
                             <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
                                 <div class="form-group">
-                                    <select class="form-control"
+                                    <select id="diag-grade" name="grade" class="form-control"
                                         style="border: none; background: rgba(255,255,255,0.9);" required>
                                         <option value="" disabled selected>Grade</option>
                                         <option value="7">Grade 7</option>
@@ -173,7 +177,7 @@
                                     </select>
                                 </div>
                                 <div class="form-group">
-                                    <select class="form-control"
+                                    <select id="diag-subject" name="subject" class="form-control"
                                         style="border: none; background: rgba(255,255,255,0.9);" required>
                                         <option value="" disabled selected>Weak Subject</option>
                                         <option value="Maths">Maths</option>
@@ -181,6 +185,11 @@
                                         <option value="Both">Both</option>
                                     </select>
                                 </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" id="diag-phone" name="phone" class="form-control"
+                                    style="border: none; background: rgba(255,255,255,0.9);" placeholder="Phone / WhatsApp number"
+                                    required>
                             </div>
                             <button type="submit" class="btn btn-primary btn-full">Get
                                 Free Assessment</button>
@@ -279,6 +288,25 @@
     <script src="smooth-scroll.js"></script>
     <script src="cursor.js"></script>
     <script src="animations.js"></script>
+
+    <!-- [Module 1.2] Core Web Vitals -->
+    <script src="https://unpkg.com/web-vitals@3/dist/web-vitals.iife.js"></script>
+    <script src="web-vitals-report.js"></script>
+
+    <!-- [Module 1.1+1.4] Analytics & Consent -->
+    <script src="analytics.js"></script>
+    <script src="consent-banner.js"></script>
+
+    <!-- [Module 3.2] reCAPTCHA v3 -->
+    <script src="https://www.google.com/recaptcha/api.js?render=YOUR_RECAPTCHA_SITE_KEY"></script>
+
+    <!-- [Module 3.3] Input Sanitization -->
+    <script src="sanitize.js"></script>
+
+    <!-- [Module 2+4] Form Handler & Offline Queue -->
+    <script src="https://unpkg.com/idb-keyval@6/dist/umd.js"></script>
+    <script src="offline-queue.js"></script>
+    <script src="form-handler.js"></script>
 </body>
 
 </html>

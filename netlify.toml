@@ -1,0 +1,41 @@
+# ═══════════════════════════════════════════════════════
+# netlify.toml — AIRA Study Centre
+# Module 3.1, 3.5 — Security Headers & CSP
+# ═══════════════════════════════════════════════════════
+
+[build]
+  publish = "src/"
+
+# ── Security Headers for All Routes ──
+[[headers]]
+  for = "/*"
+
+  [headers.values]
+    # Content Security Policy
+    Content-Security-Policy = """
+      default-src 'self';
+      script-src 'self' https://cdnjs.cloudflare.com https://unpkg.com https://www.googletagmanager.com https://static.hotjar.com https://www.google.com https://www.gstatic.com 'unsafe-inline';
+      style-src 'self' https://fonts.googleapis.com 'unsafe-inline';
+      font-src 'self' https://fonts.gstatic.com;
+      img-src 'self' data: https://images.unsplash.com https://www.google.com;
+      connect-src 'self' https://script.google.com https://www.google-analytics.com https://*.supabase.co;
+      frame-src https://www.google.com;
+    """
+
+    # Prevent clickjacking
+    X-Frame-Options = "DENY"
+
+    # Prevent MIME type sniffing
+    X-Content-Type-Options = "nosniff"
+
+    # Control referrer information
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+    # Restrict browser features
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+
+    # HTTPS enforcement (Module 3.5)
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains; preload"
+
+    # XSS protection (legacy but harmless)
+    X-XSS-Protection = "1; mode=block"
