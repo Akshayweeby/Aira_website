@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIRA Study Centre | Maths & Science Coaching for Grades 7-10</title>
+    <meta name="description"
+        content="AIRA Study Centre offers premium Maths and Science coaching for Grades 7-10. Small batch sizes, personalized attention, and board exam focus.">
+    <!-- [Module 3.5] HTTPS Redirect -->
+    <script>if(location.protocol==='http:'&&location.hostname!=='localhost'){location.replace('https://'+location.host+location.pathname+location.search)}</script>
+    <!-- [Module 3.1] Fallback CSP for local dev -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com https://unpkg.com https://www.googletagmanager.com https://static.hotjar.com https://www.google.com https://www.gstatic.com 'unsafe-inline'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://images.unsplash.com https://www.google.com; connect-src 'self' https://script.google.com https://www.google-analytics.com https://*.supabase.co; frame-src https://www.google.com;">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Menu -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-inner">
+            <a href="Aira_website.html" class="logo" style="display: flex; align-items: center; gap: 8px;">
+                <div class="nav-logo-circle">
+                    <img src="Aira%20logo.png" alt="AIRA Logo">
+                </div>
+                <span style="font-family: 'Libre Baskerville', serif; font-weight: 700;">AIRA Study Centre</span>
+            </a>
+
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+                ☰
+            </button>
+
+            <div class="nav-links" id="navLinks">
+                <a href="Aira_website.html" class="active">Home</a>
+                <a href="programs.html">Programs</a>
+                <a href="about.html">About</a>
+                <a href="results.html">Results</a>
+                <a href="contact.html">Contact</a>
+
+                <div class="nav-actions">
+                    <a href="contact.html" class="btn btn-primary" style='color: rgb(234, 210, 72);'>Book Free Demo
+                        Class</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <canvas id="hero-canvas"></canvas>
+        <div class="hero-shape hero-shape-1"></div>
+        <div class="hero-shape hero-shape-2"></div>
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <span class="section-tag">Maths & Science Coaching · Grades 7–10</span>
+                <h1>Strong Concepts.<br><em>Confident Students.</em><br>Board Exam Success.</h1>
+                <p>We provide personalized coaching, small batch sizes, and a concept-first approach to help your child
+                    excel academically without the stress.</p>
+                <div class="hero-btns">
+                    <a href="contact.html" class="btn btn-primary btn-lg">Book a Free Demo Class</a>
+                    <a href="https://wa.me/919513135352?text=Hello,%20I%20want%20to%20know%20about%20AIRA%20Study%20Centre%20classes."
+                        target="_blank" class="btn btn-yellow btn-lg">💬 Call Now / WhatsApp</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-float-card float-1">
+                    <div class="float-icon">🎓</div>
+                    <div>
+                        <strong>100%</strong>
+                        <div style="font-size: 0.85rem; color: var(--text-muted)">Concept Clarity</div>
+                    </div>
+                </div>
+                <div class="hero-float-card float-2">
+                    <div class="float-icon">⭐</div>
+                    <div>
+                        <strong>4.9/5</strong>
+                        <div style="font-size: 0.85rem; color: var(--text-muted)">Parent Rating</div>
+                    </div>
+                </div>
+                <div class="hero-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&q=80&w=800"
+                        alt="Teacher explaining concepts to students"
+                        style="object-fit: cover; width: 100%; height: 100%;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Parent Problem Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Many Students Struggle in Big Institutes</h2>
+            </div>
+            <div class="problem-grid problem-grid-flex mb-4">
+                <div class="problem-card">
+                    <div class="problem-icon">👥</div>
+                    <h3>Large Batches</h3>
+                    <p>Too many students in one class limits personal attention from the teacher.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">🤐</div>
+                    <h3>Limited Attention</h3>
+                    <p>Teachers can't focus on individual student needs and pace of learning.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">❓</div>
+                    <h3>Hesitation to Ask</h3>
+                    <p>Students shy away from asking doubts in front of a crowded classroom.</p>
+                </div>
+                <div class="problem-card">
+                    <div class="problem-icon">🌫️</div>
+                    <h3>Unclear Concepts</h3>
+                    <p>Without proper foundation, topics feel confusing and exams become stressful.</p>
+                </div>
+            </div>
+
+            <div class="problem-transition">
+                At AIRA Study Centre, we focus on individual learning and strong conceptual understanding.
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose AIRA -->
+    <section class="section section-bg">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Why Choose Us</span>
+                <h2>The AIRA Advantage</h2>
+                <p class="page-subtitle mt-2">Built for student success and parent peace of mind.</p>
+            </div>
+
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon-wrap">🎯</div>
+                    <div>
+                        <h3>Small Batch Size</h3>
+                        <p>Maximum 12 Students per batch ensuring every student gets heard.</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon-wrap">💡</div>
+                    <div>
+                        <h3>Concept Clarity First</h3>
+                        <p>We build foundations before rushing the syllabus.</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon-wrap">📊</div>
+                    <div>
+                        <h3>Regular Tests & Tracking</h3>
+                        <p>Weekly assessments and progress reports for parents.</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon-wrap">🏆</div>
+                    <div>
+                        <h3>Board Exam Preparation</h3>
+                        <p>Structured curriculum aligned perfectly with board exams.</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon-wrap">💬</div>
+                    <div>
+                        <h3>Doubt Solving Support</h3>
+                        <p>Dedicated sessions to resolve every single query.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Offered -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Programs Offered</h2>
+                <p class="page-subtitle mt-2">Tailored learning journeys from Grade 7 to Board Mastery.</p>
+            </div>
+
+            <div class="feature-grid">
+                <div class="program-card">
+                    <div class="program-header">
+                        <div class="program-grade">Grade 7</div>
+                        <h4>Foundation Maths & Science</h4>
+                    </div>
+                    <div class="program-body">
+                        <p class="program-desc">Build strong mathematical fundamentals and analytical skills crucial for
+                            high school.</p>
+                        <a href="programs.html" class="btn btn-outline btn-full">Learn More</a>
+                    </div>
+                </div>
+                <div class="program-card">
+                    <div class="program-header">
+                        <div class="program-grade">Grade 8</div>
+                        <h4>Concept Builder</h4>
+                    </div>
+                    <div class="program-body">
+                        <p class="program-desc">Maths and Science concepts for a strong academic base before
+                            transitioning <br> to higher grades.</p>
+                        <a href="programs.html" class="btn btn-outline btn-full">Learn More</a>
+                    </div>
+                </div>
+                <div class="program-card">
+                    <div class="program-header">
+                        <div class="program-grade">Grade 9</div>
+                        <h4>Advanced Learning</h4>
+                    </div>
+                    <div class="program-body">
+                        <p class="program-desc">Preparation for higher level problem solving and introduction to complex
+                            topics.</p>
+                        <a href="programs.html" class="btn btn-outline btn-full">Learn More</a>
+                    </div>
+                </div>
+                <div class="program-card">
+                    <div class="program-header">
+                        <div class="program-grade">Grade 10</div>
+                        <h4>Board Mastery</h4>
+                    </div>
+                    <div class="program-body">
+                        <p class="program-desc">Structured preparation for board exams with rigorous testing and
+                            revision strategies.</p>
+                        <a href="programs.html" class="btn btn-outline btn-full">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teaching Method -->
+    <section class="section section-bg">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Teaching Method</h2>
+                <p class="page-subtitle mt-2">A proven 5-step system for academic excellence.</p>
+            </div>
+
+            <div class="process-wrap mt-4">
+                <div class="process-line"></div>
+                <div class="process-step">
+                    <div class="process-num">1</div>
+                    <div class="process-title">Concept Explanation</div>
+                </div>
+                <div class="process-step">
+                    <div class="process-num">2</div>
+                    <div class="process-title">Guided Practice</div>
+                </div>
+                <div class="process-step">
+                    <div class="process-num">3</div>
+                    <div class="process-title">Worksheets</div>
+                </div>
+                <div class="process-step">
+                    <div class="process-num">4</div>
+                    <div class="process-title">Regular Tests</div>
+                </div>
+                <div class="process-step">
+                    <div class="process-num">5</div>
+                    <div class="process-title">Performance Tracking</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Success Stories</span>
+                <h2>What Parents & Students Say</h2>
+            </div>
+
+            <div class="testi-grid">
+                <div class="testi-card">
+                    <div class="testi-quote">"</div>
+                    <div class="stars">★★★★★</div>
+                    <p class="testi-content">"AIRA helped my child improve from 62% to 89% in Maths. The small batch
+                        size really made a difference in building his confidence."</p>
+                    <div class="testi-author">
+                        <div class="author-img">P</div>
+                        <div class="author-info">
+                            <h4>Parent</h4>
+                            <span>Grade 9 Student</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testi-card">
+                    <div class="testi-quote">"</div>
+                    <div class="stars">★★★★★</div>
+                    <p class="testi-content">"I finally understood algebra concepts clearly. The teachers are very
+                        approachable and I never hesitate to ask my doubts anymore."</p>
+                    <div class="testi-author">
+                        <div class="author-img">S</div>
+                        <div class="author-info">
+                            <h4>Student</h4>
+                            <span>Grade 10</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-4">
+                <a href="results.html" class="btn btn-outline">View All Testimonials & Results</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Experience Our Teaching First</h2>
+            <p style="font-size: 1.25rem; margin-bottom: 2rem; opacity: 0.9;">Free Demo Class Available for all Grades
+                7-10</p>
+            <div class="cta-btns">
+                <a href="contact.html" class="btn btn-yellow btn-lg">Book Demo
+                    Class</a>
+                <a href="https://wa.me/919999999999?text=Hello,%20I%20want%20to%20know%20about%20AIRA%20Study%20Centre%20classes."
+                    target="_blank" style="background-color: rgb(255, 255, 255);" class="btn btn-outline btn-lg"
+                    style="color: black;">WhatsApp
+                    Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <div class="nav-logo-circle">
+                            <img src="Aira%20logo.png" alt="AIRA Logo">
+                        </div>
+                        <span style="font-family: 'Libre Baskerville', serif; font-weight: 700;">AIRA Study
+                            Centre</span>
+                    </div>
+                    <p>Maths & Science Coaching · Grades 7–10</p>
+                    <div class="footer-socials">
+                        <a href="https://www.facebook.com/airastudy.neetusharma/"><img src="FB.png" alt="FB"></a>
+                        <a href="https://www.instagram.com/airastudycentre/"><img src="IG.jpg" alt="IG"></a>
+                        <a href="https://www.youtube.com/@airastudycentre"><img src="YT.png" alt="YT"></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="Aira_website.html">Home</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="results.html">Results & Testimonials</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Programs</h4>
+                    <ul class="footer-links">
+                        <li><a href="programs.html">Grade 7 Foundation</a></li>
+                        <li><a href="programs.html">Grade 8 Concept Builder</a></li>
+                        <li><a href="programs.html">Grade 9 Advanced</a></li>
+                        <li><a href="programs.html">Grade 10 Mastery</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="footer-title">Contact Us</h4>
+                    <ul class="footer-links">
+                        <li><a href="tel:+919513135352">📞 +91 95131 35352</a></li>
+                        <li><a href="https://wa.me/919513135352?text=Hello,%20I%20want%20to%20know%20about%20AIRA%20Study%20Centre%20classes."
+                                target="_blank">💬 WhatsApp Us</a></li>
+                        <li>📍Shop No.2, 2nd Cross, near DLF main road, opposite
+                            Spectra Diagnostic center, Yelenahalli, Akshayanagar, Bengaluru-560114, Karnataka.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AIRA Study Centre. Designed for Student Excellence.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/919513135352?text=Hello,%20I%20want%20to%20know%20about%20AIRA%20Study%20Centre%20classes."
+        class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
+        <svg viewBox="0 0 32 32" fill="none" style="width: 32px; height: 32px;">
+            <path
+                d="M23.5 8.5C21.7 6.7 19.3 5.7 16.7 5.7C11.4 5.7 7.1 10 7.1 15.3C7.1 17.1 7.6 18.8 8.5 20.3L7 25L11.9 23.5C13.3 24.3 14.9 24.7 16.7 24.7C21.9 24.7 26.3 20.4 26.3 15.2C26.2 12.6 25.2 10.2 23.5 8.5ZM16.7 23.1C15.1 23.1 13.5 22.7 12.2 21.9L11.9 21.7L9.1 22.5L9.9 19.8L9.7 19.4C8.8 18 8.3 16.3 8.3 14.7C8.3 10.5 11.7 7.1 15.9 7.1C17.9 7.1 19.8 7.9 21.2 9.3C22.6 10.7 23.4 12.6 23.4 14.6C23.8 18.7 20.5 23.1 16.7 23.1ZM20.5 17.2C20.3 17.1 19.2 16.5 19 16.5C18.8 16.4 18.7 16.4 18.5 16.6C18.4 16.8 17.9 17.3 17.8 17.5C17.7 17.6 17.5 17.7 17.3 17.5C17.1 17.4 16.5 17.2 15.8 16.5C15.2 15.9 14.8 15.2 14.6 15C14.5 14.8 14.6 14.6 14.7 14.5L15 14.1C15.1 14 15.1 13.8 15.2 13.7C15.3 13.6 15.3 13.4 15.2 13.3C15.1 13.2 14.7 12.1 14.5 11.7C14.3 11.3 14.1 11.3 14 11.3H13.5C13.4 11.3 13.1 11.4 12.9 11.6C12.7 11.8 12.1 12.4 12.1 13.5C12.1 14.6 12.9 15.7 13 15.8C13.1 15.9 14.7 18.3 17 19.2C17.6 19.5 18 19.7 18.4 19.8C19 20 19.5 20 20 19.9C20.5 19.8 21.5 19.2 21.7 18.6C21.9 18 21.9 17.5 21.8 17.4C21.7 17.3 21.5 17.3 20.5 17.2Z"
+                fill="white" />
+        </svg>
+    </a>
+
+    <!-- CDN Dependencies -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r160/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.0.42/dist/lenis.min.js"></script>
+
+    <!-- App Scripts -->
+    <script src="script.js"></script>
+    <script src="smooth-scroll.js"></script>
+    <script src="cursor.js"></script>
+    <script src="three-scene.js"></script>
+    <script src="animations.js"></script>
+
+    <!-- [Module 1.2] Core Web Vitals -->
+    <script src="https://unpkg.com/web-vitals@3/dist/web-vitals.iife.js"></script>
+    <script src="web-vitals-report.js"></script>
+
+    <!-- [Module 1.1+1.4] Analytics & Consent -->
+    <script src="analytics.js"></script>
+    <script src="consent-banner.js"></script>
+
+    <!-- [Module 3.2] reCAPTCHA v3 -->
+    <script src="https://www.google.com/recaptcha/api.js?render=YOUR_RECAPTCHA_SITE_KEY"></script>
+
+    <!-- [Module 3.3] Input Sanitization -->
+    <script src="sanitize.js"></script>
+
+    <!-- [Module 2+4] Form Handler & Offline Queue -->
+    <script src="https://unpkg.com/idb-keyval@6/dist/umd.js"></script>
+    <script src="offline-queue.js"></script>
+    <script src="form-handler.js"></script>
+</body>
+
+</html>
