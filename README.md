@@ -53,6 +53,6 @@ The website was built from the ground up using core web technologies to ensure f
 
 <br/>
 
-<sub>Built with ❤️ for student success and parent peace of mind.</sub>
+
 
 </div>
