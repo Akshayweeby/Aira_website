@@ -1,4 +1,11 @@
 {
+  "redirects": [
+    {
+      "source": "/Aira_website.html",
+      "destination": "/",
+      "permanent": true
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",
